@@ -1,0 +1,209 @@
+body {
+	background:#fbfdf6;
+	font-family:"Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#999999;
+	margin:20px auto;
+	text-align:center;
+	line-height:1.4em;
+	width:960px;
+}
+
+#noncse {
+	color:gray;
+}
+
+
+* html ul ul {
+	margin-left:-16px;/* ie5 fix */
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+}	
+* html ul li {float:left;/* hide float from ie5*/}
+* html ul ul {
+	width:148px;	
+	voice-family: "\"}\""; 
+	voice-family: inherit;	
+}
+* html ul ul {margin-left:0;/* hide margin from ie5*/}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	letter-spacing:-0.06em;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+a:link, a:visited {
+	font-family:georgia, times, serif;
+	font-weight:normal;
+	text-decoration:none;
+	font-size:0.8em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+
+a:hover {
+	border-bottom:1px dotted #666666;
+}
+
+a img {
+	border:none;
+}
+
+header, section, article, footer {
+	padding:10px;
+	margin:10px;
+	border:1px solid #e7e2d7;
+	border-radius:8px;
+	-webkit-border-radius:.8em;
+	-moz-border-radius:.8em;
+	background:#fff url(sprites.png) repeat-x 0px -120px;
+}
+
+header {
+	display:block;
+	position:relative;
+	text-align:left;
+}
+
+header img {
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+header h1 {
+	font-size:2.3em;
+	text-transform:none;
+	letter-spacing:0em;
+	text-align:center;
+}
+
+header h2 {
+	margin:-10px 0px 20px;
+	font-size:1.3em;
+	text-align:center
+}
+
+
+
+section blue {
+	color:blue;
+}
+
+section red {
+	color:red;
+}
+
+section green {
+	color:green;
+}
+
+section yellow {
+	color:#FC0;
+	font-weight: normal;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+	background:transparent url(sprites.png) no-repeat 0px -80px;
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;	
+	text-shadow:0 1px 0 #403232;
+}
+
+section ul {
+	padding:0px;
+	list-style:none;
+
+	margin:14px 0px;
+}
+
+
+
+li:hover ul, li.over ul {
+	display:block;
+	padding-left:10px;
+	} /* The magic */
+
+li ul {
+	display:none;
+}
+li ul li{border:none;}
+/* Styles for Menu Items */
+ul li a {
+	display:block;
+}
+
+section li a:link, section li a:visited {
+	float:left;
+	width:96%;
+	padding:3px 1%;
+	border-bottom:1px solid #e7e2d7;
+	color:#99CCFF;
+}
+
+section ul li a:link, section li a:visited {
+	float:left;
+	width:96%;
+	padding:3px 1%;
+	border-bottom:1px solid #e7e2d7;
+	color:#99CCFF;
+}
+
+section li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+section {
+	float:left;
+	width:178px;
+	text-align:left;
+	
+}
+
+article {
+	float:right;
+	width:658px;
+	text-align:left;
+}
+
+article h1 {
+	background:transparent url(sprites.png) no-repeat 0px 0px;
+	color:#fff;
+	padding:7px 10px 12px 30px;
+	margin-left:-30px;
+	text-shadow:0 1px 0 #999999;
+}
+
+article h2, article h3, article h4, article h5, article h6  {
+	background:transparent url(sprites.png) no-repeat 0px -40px;
+	color:#fff;
+	padding:7px 10px 12px 30px;
+	margin-left:-30px;
+	text-shadow:0 1px 0 #999999;
+}
+
+article p:first-of-type {
+	font-family:Helvetica, Arial, serif;
+	text-transform:uppercase;
+	border-top:1px dotted #968765;
+	border-bottom:1px dotted #968765;
+	padding:10px 0px;
+	color:#999999;
+}
+
+footer {
+	display:block;
+	clear:both !important;
+	width:898px;
+}
+
+footer a {
+	margin:0px 5px;
+}

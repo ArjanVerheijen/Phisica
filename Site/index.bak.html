@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Phisica Template One</title>
+<!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+// JavaScript Document
+
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("nav");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+</script>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <hgroup></hgroup>
+<img src="logo.png" width="920" height="100"></header>
+
+<article>
+  <h1>Startpagina</h1>
+    <p>Integer dignissim nunc id justo tristique at ultrices leo ornare. Pellentesque eget justo mi, ut vulputate nulla. Vestibulum eget nibh orci, non ornare velit. Cras turpis lorem, tristique vel ultricies vel, bibendum sed dui. Nunc mollis interdum dolor id viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eget ante nisl. Suspendisse dignissim felis quis arcu commodo fringilla. Praesent condimentum lacinia mi, ac blandit purus auctor vitae.</p> 
+    <p>Donec vitae lorem quis dui ultrices hendrerit. Proin vel turpis eu justo rutrum ultricies eu at neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu felis quis justo consequat interdum et at lorem. Aenean nulla lacus, pulvinar quis tempus ut, rutrum vitae odio. Morbi a urna dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc commodo leo id arcu varius ut aliquet velit scelerisque. Suspendisse et dolor eget nunc adipiscing imperdiet.</p>
+    <h2>tussenkop 1</h2>
+    <p>Ut et nunc metus. Quisque nibh lorem, dictum vitae commodo vel, mattis id sem. Praesent ac justo ipsum. Proin iaculis metus eu urna venenatis commodo. Donec <a href="#">feugiat pharetra</a> elit sed tincidunt. Cras felis velit, ornare quis semper nec, cursus ut nisl. Ut scelerisque ullamcorper aliquet. Integer tortor felis, bibendum iaculis posuere quis, suscipit non nunc. Donec pretium accumsan lacus, eget rhoncus metus lobortis et.</p>
+    <p>Sed ut eros enim, gravida tristique mauris. Proin pellentesque, turpis vel placerat mollis, nulla leo iaculis mauris, quis dictum metus augue ac libero. Aenean scelerisque tellus eget magna vulputate nec fringilla urna imperdiet. Cras fringilla lorem vitae lectus vestibulum in tincidunt nulla pharetra. Phasellus et magna arcu, vel sagittis diam. Nulla eget turpis a nibh ornare accumsan. Praesent porta ultricies ligula nec pharetra. Nulla facilisi. Nunc blandit velit vel tellus lobortis dignissim. Pellentesque ornare fringilla sapien a sollicitudin. Praesent urna massa, cursus eu euismod eu, ornare eu dui. Sed pulvinar porttitor mi, iaculis aliquam risus mollis vel.</p>
+    <h3>tussenkop 2</h3>
+    <p>Etiam porttitor libero ut dui adipiscing nec ullamcorper lectus egestas. Nullam massa lorem, posuere et interdum nec, tempor et erat. Etiam sagittis tellus non urna feugiat sed scelerisque quam suscipit. Etiam eget felis velit. Sed sagittis congue metus, quis pharetra est commodo id. Duis pulvinar, libero eget sollicitudin posuere, quam tellus rutrum justo, sit amet facilisis purus ipsum eu quam. Phasellus pharetra vehicula purus, sit amet auctor purus porta vitae. Maecenas accumsan blandit erat id tincidunt. Proin sit amet massa eu diam sagittis sodales ac et nunc. </p>
+</article>
+
+<section>
+	<h1>ONDERWERPEN</h1>
+    <ul id="nav">
+        <li><a href="#"><blue>Elektriciteit en magnetisme</blue></a></li>
+        <ul>
+			<li><a href="#">Web Design </a></li>
+			<li><a href="#">Internet Marketing </a></li>
+			<li><a href="#">Hosting </a></li>
+			<li><a href="#">Domain Names </a></li>
+			<li><a href="#">Broadband </a></li>
+		</ul>
+		<li><a href="#"><green>Mechanica </green></a></li>
+                <ul>
+			<li><a href="#">Web Design </a></li>
+			<li><a href="#">Internet Marketing </a></li>
+			<li><a href="#">Hosting </a></li>
+			<li><a href="#">Domain Names </a></li>
+			<li><a href="#">Broadband </a></li>
+		</ul>
+        <li><a href="#"><red>Warmteleer</red> </a></li>
+        <li><a href="#"><yellow>Golven en Straling</yellow> </a></li>
+    </ul>
+</section>
+
+<footer>
+	<p>&copy; 2012 Phisica - <a href="#"><abbrev>Naar boven</abbrev></a></p>
+</footer>
+</body>
+</html>
